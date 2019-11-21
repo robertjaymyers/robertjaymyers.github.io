@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Apps made by Robert Jay Myers">
+    <meta name="keywords" content="text editor, free, notes, note-taking, lists, list-making, color, simple, customizable">
+    <meta name="author" content="Robert Jay Myers">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
+    <title>Cute Little Notes Theme Creator - Robert Jay Myers - Apps</title>
+  </head>
+  <body>
+    <span class="to-top-floating-button">
+      <a href="#banner">Top</a>
+    </span>
+    <header>
+      <div class="container">
+        <div id="banner">
+          <a href="./index.html"><img src="../img/banner.png"></a><h1><span class="banner-border">Robert Jay Myers - Apps</span></h1>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link"><a href="../nav/donate.html">Donate</a></li>
+            <li class="nav-link"><a href="../nav/contact.html">Contact</a></li>
+            <li class="nav-link"><a href="../nav/about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="page-intro">
+      <div class="container">
+        <h1>Cute Little Notes Theme Creator</h1>
+        <p>Companion theme creation tool to the text editor Cute Little Notes. This tool allows you to dynamically create unique themes for Cute Little Notes by right-clicking on elements in the interface and setting their colors and images.</p>
+        <p>Once saved and completed, themes can be loaded into Cute Little Notes by being placed in the Cute Little Notes Mods folder.</p>
+        <p>Cute Little Notes Theme Creator aims to make it straightforward and intuitive to create custom themes for Cute Little Notes and share them with others, with no knowledge of stylesheets or coding required.</p>
+      </div>
+    </section>
+    <section id="boxes-app-display">
+      <div class="container">
+        <a href="../img/cute-little-notes-theme-creator-display-img-pick-bg-color.png" target="_blank">
+          <span class="box">
+            <img src="../img/cute-little-notes-theme-creator-display-img-pick-bg-color.png">
+          </span>
+        </a>
+        <a href="../img/cute-little-notes-theme-creator-display-img-sample-menu.png" target="_blank">
+          <span class="box">
+            <img src="../img/cute-little-notes-theme-creator-display-img-sample-menu.png">
+          </span>
+        </a>
+        <a href="../img/cute-little-notes-theme-creator-display-img-creator-name.png" target="_blank">
+          <span class="box">
+            <img src="../img/cute-little-notes-theme-creator-display-img-creator-name.png">
+          </span>
+        </a>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <article id="documentation">
+          <div class="page-key">
+            <span class="dl-link"><a href="https://workupload.com/file/SPHc2fuD" target="_blank">Download</a></span>
+            <span class="dl-link"><a href="https://github.com/robertjaymyers/Cute-Little-Notes-Theme-Creator" target="_blank">Source</a></span>
+            <p><b>Version:</b> 1.0</p>
+            <p><b>Compatibility</b>: Windows</p>
+            <h3>Features</h3>
+            <p>Cute Little Notes Theme Creator allows you to edit and create themes for the text editor Cute Little Notes.</p>
+            <ul>
+              <li><a href="#subsection-saving-and-loading">Saving and Loading</a></li>
+              <li><a href="#subsection-theme-editing-main">Theme Editing: Main</a></li>
+              <li><a href="#subsection-theme-editing-info">Theme Editing: Info</a></li>
+              <li><a href="#subsection-theme-editing-jot">Theme Editing: Jot</a></li>
+            </ul>
+          </div>
+          <div class="page-sections-top-border-layer">
+          </div>
+          <div class="page-sections">
+            <div id="subsection-saving-and-loading">
+              <h3>Saving and Loading</h3>
+              <p>Themes are saved as QSS files (Qt's version of a CSS stylesheet) and create some additional files in the same location as saved.</p>
+              <p>Themes can be loaded in the Theme Creator, for further editing, by opening QSS files. The program will look for any adjacent files relevant to the theme.</p>
+              <ul>
+                <li class="list-item">When a QSS file is saved, the program also saves, in the same location, a themeInfo, themeJot, and images folder containing copies of the program's specified icons.</li>
+                <li class="list-item">Any stylesheet elements not explicitly designed to be recognized by the Theme Creator for applying and editing will be ignored when loading a theme in the Theme Creator tool. This is largely irrelevant, unless you want to edit the QSS file by hand for some reason.</li>
+                <li class="list-item">When a QSS stylesheet for a theme is loaded in Cute Little Notes, the stylesheet is applied as a whole, so you can add additional styling to a theme by hand, if you wish. Just know that unexpected styling elements won't be recognized, saved, or loaded in the Theme Creator tool; only in Cute Little Notes, the text editor.</li>
+                <li class="list-item">For easier organization, it's recommended that you save each theme in its own folder. For example, save DarkBlue.qss in the folder "Theme - Dark Blue". This also simplifies copying the theme over to your Mods folder when it's finished.</li>
+              </ul>
+            </div>
+            <div id="subsection-theme-editing-main">
+              <h3>Theme Editing: Main</h3>
+              <p>The primary theme editing is done by right-clicking in parts of the interface and choosing colors or icon images for a particular element. The following are areas that can be edited, by name, and the elements within them that can be edited. The program also comes with an image guide of what areas can be edited by right-clicking.</p>
+              <p>Icon images should all be 20x20 png.</p>
+              <ul>
+                <li class="list-item"><b>textEdit</b>: Background Color, Text Color, Border Color, Scroll Background Color</li>
+                <li class="list-item"><b>mainToolBar</b>: Background Color, Border Color, Separator Color, Hover Background Color (ToolBar), Hover Border Color (ToolBar), ToolBar Icon: New, ToolBar Icon: Open, ToolBar Icon: Save, ToolBar Icon: Comment, ToolBar Icon: List Title, ToolBar Icon: Mark Done, ToolBar Icon: Mark Scrapped</li>
+                <li class="list-item"><b>statusBar</b>: Background Color, Text Color</li>
+                <li class="list-item"><b>menuBar</b>: Background Color, Text Color, Border Color, Hover Text Color (Menu), Hover Border Color (Menu)</li>
+                <li class="list-item"><b>menuDropdown</b>: Background Color, Text Color, Border Color, Separator Color, Background Color (Menu Item), Background Color (Menu Item Checked), Hover Background Color (Menu), Hover Text Color (Menu), Checked Option Image</li>
+              </ul>
+            </div>
+            <div id="subsection-theme-editing-info">
+              <h3>Theme Editing: Info</h3>
+              <p>The most important part of the theme is info such as name of theme, name of who made it, and version number. These are set under the Set Theme Info menu and the program will warn you if you try to save a theme without these set. This warning can be disabled under the Set Theme Info menu, if desired.</p>
+              <ul>
+                <li class="list-item"><b>Creator Name</b>: The name of who made the theme. Ideally, this should be unique and not ridiculously long, as it will show up in the name given to the theme, when it's loaded in the list of themes in Cute Little Notes.</li>
+                <li class="list-item"><b>Theme Name</b>: The name of the theme. Determines how the theme is named when it's loaded in the list of themes in Cute Little Notes.</li>
+                <li class="list-item"><b>Version Number</b>: Defaults to 1, or 1.0. Currently does nothing in Cute Little Notes, but in the future, may be used to determine which of two duplicate themes to use if someone has two different versions of the same theme in their Mods folder, with higher version numbers taking priority over lower.</li>
+              </ul>
+            </div>
+            <div id="subsection-theme-editing-jot">
+              <h3>Theme Editing: Jot</h3>
+              <p>Jot theme settings determine what kind of special color or text settings will be used for the Jot features: Comment, List Title, Mark Done, and Mark Scrapped. These are edited in the Set Theme Jot menu and the available options are as follows.</p>
+              <ul>
+                <li class="list-item"><b>Comment</b>: Set Color Bg, Set Color Text</li>
+                <li class="list-item"><b>List Title</b>: Set Color Bg, Set Color Text</li>
+                <li class="list-item"><b>Mark Done</b>: Set Color Bg, Set Color Text, Set Text</li>
+                <li class="list-item"><b>Mark Scrapped</b>: Set Color Bg, Set Color Text, Set Text</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p>Robert Jay Myers - Apps, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+    </footer>
+  </body>
+</html>

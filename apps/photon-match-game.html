@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Apps made by Robert Jay Myers">
+    <meta name="keywords" content="memory flip game, free, memory match game, match game, language learning, language, memorization, customizable">
+    <meta name="author" content="Robert Jay Myers">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
+    <title>Photon Match - Robert Jay Myers - Apps</title>
+  </head>
+  <body>
+    <span class="to-top-floating-button">
+      <a href="#banner">Top</a>
+    </span>
+    <header>
+      <div class="container">
+        <div id="banner">
+          <a href="./index.html"><img src="../img/banner.png"></a><h1><span class="banner-border">Robert Jay Myers - Apps</span></h1>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link"><a href="../nav/donate.html">Donate</a></li>
+            <li class="nav-link"><a href="../nav/contact.html">Contact</a></li>
+            <li class="nav-link"><a href="../nav/about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="page-intro">
+      <div class="container">
+        <h1>Photon Match</h1>
+        <p>Memory match game for language learning. Can use custom word pairs, in addition to default word pairs.</p>
+        <p>You can choose between different languages and categories within the chosen language. Categories usually come with more than ten total word pairs, so each time you do a new puzzle in a category, you may see some variation in what words are included. Repeat puzzles as many times as you want for pratice! New languages and categories can be added to the WordPairs folder. See the section Add New Puzzles for how to do this.</p>
+        <p>Photon Match aims to make it fun and simple to practice vocabulary in a new language, or to review vocabulary you're already familiar with, while allowing easy customization, so you can add in and practice the things that are most important to you.</p>
+      </div>
+    </section>
+    <section id="boxes-app-display">
+      <div class="container">
+        <a href="../img/photon-match-game.png" target="_blank">
+          <span class="box">
+            <img src="../img/photon-match-game.png">
+          </span>
+        </a>
+        <a href="../img/photon-match-game-display-img-puzzle-solved.png" target="_blank">
+          <span class="box">
+            <img src="../img/photon-match-game-display-img-puzzle-solved.png">
+          </span>
+        </a>
+        <a href="../img/photon-match-game-display-img-choose-category.png" target="_blank">
+          <span class="box">
+            <img src="../img/photon-match-game-display-img-choose-category.png">
+          </span>
+        </a>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <article id="documentation">
+          <div class="page-key">
+            <span class="dl-link"><a href="https://workupload.com/file/fkNxsWpP" target="_blank">Download</a></span>
+            <span class="dl-link"><a href="https://github.com/robertjaymyers/Photon-Match" target="_blank">Source</a></span>
+            <p><b>Version:</b> 1.0</p>
+            <p><b>Compatibility</b>: Windows</p>
+            <h3>Features</h3>
+            <p>Practice language learning by matching words, in a Memory Flip style of game. For example, match the English word "crab" with the French word "le crabe."</p>
+            <ul>
+              <li><a href="#subsection-solve-puzzles">Solve Puzzles</a></li>
+              <li><a href="#subsection-choose-lang-and-cat">Choose Language or Category</a></li>
+              <li><a href="#subsection-learn-with-tts">Learn with TextToSpeech</a></li>
+              <li><a href="#subsection-add-new-puzzles">Add New Puzzles</a></li>
+            </ul>
+          </div>
+          <div class="page-sections-top-border-layer">
+          </div>
+          <div class="page-sections">
+            <div id="subsection-solve-puzzles">
+              <h3>Solve Puzzles</h3>
+              <p>When you first load up the program, it will automatically create and start a puzzle, based on the first language and first category in that language, that was loaded. If you've previously used the program, it will attempt to create and start a puzzle based on whatever the last language used was.</p>
+              <p>Puzzles are solved when all of the word pairs have been matched. Visually, this will look like all of the tiles are faded out. You'll also see a splash screen that says the puzzle is complete and that will tell you to click New Puzzle to create a new puzzle to solve.</p>
+              <p>New Puzzle normally creates a new puzzle based on the current language and category chosen. If you hold down shift and then click New Puzzle, it will pick a category at random and create a puzzle from the randomly chosen category. </p>
+            </div>
+            <div id="subsection-choose-lang-and-cat">
+              <h3>Choose Language or Category</h3>
+              <p>Choosing language or category determines what is used when you click New Puzzle. Note that New Puzzle can be clicked at any time, regardless of whether the current puzzle is solved. It will erase the existing puzzle and generate a new one based on the currently set language and category.</p>
+              <p>Language and category are set by clicking the Choose Language and Choose Category buttons.</p>
+            </div>
+            <div id="subsection-learn-with-tts">
+              <h3>Learn with Text-To-Speech</h3>
+              <p>TextToSpeech allows audio playback of words when you click on a card and can be enabled or disabled with the Speech button in Photon Match.</p>
+              <ul>
+                <li class="list-item"><b>NONE</b>: TextToSpeech is disabled.</li>
+                <li class="list-item"><b>ALL</b>: TextToSpeech is enabled.</li>
+                <li class="list-item"><b>LEFT</b>: TextToSpeech is enabled only for the first language in WordPairs. For example, if the folder is English-French, only English TextToSpeech will be enabled.</li>
+                <li class="list-item"><b>RIGHT</b>: TextToSpeech is enabled only for the second language in WordPairs. For example, if the folder is English-French, only French TextToSpeech will be enabled.</li>
+              </ul>
+              <p>Note: TextToSpeech only works on words with companion audio files set up in the TextToSpeech folder.</p>
+              <p>TextToSpeech is based on, well... TextToSpeech, so there are no guarantees that pronunciation of words is precisely accurate. I recommend using this as a way to familiarize yourself with the sounds of a language and only as a tentative guide to how to say the words accurately.</p>
+            </div>
+            <div id="subsection-add-new-puzzles">
+              <h3>Add New Puzzles</h3>
+              <p>The program comes with a WordPairs folder, which contains the pairs of words used in puzzle creation. To create new WordPairs files with sets of words, it's recommended that you use the tool Photon Match Puzzle Creator. This is important for generating the hashes used in giving words unique IDs and makes it so you don't even need to know things like the fact that words have IDs.</p>
+              <p>The path to puzzles goes like this: WordPairs > LanguageFirst-LanguageSecond > Category Name > list-of-word-pairs.txt</p>
+              <p>Photon Match Puzzle Creator provides an interface where you put in the name of the first language, name of the second language, category name, and word pair entries. The program has placeholder text to show you what input might look like.</p>
+              <p>To use Photon Match Puzzle Creator to create new puzzles without issues, you must do the following:</p>
+              <ul>
+                <li class="list-item">Go to Export > Settings and set bal4web path and creator name (download bal4web from <a href="http://www.cross-plus-a.com/bconsole.htm" target="_blank">here</a>, it's the one called Command Line Utility for Online Text-To-Speech)</li>
+                <li class="list-item">Fill out the language name boxes (these are the ones with the placeholder text English and French)</li>
+                <li class="list-item">Fill out the category name box (this is the one with the placeholder text Animals)</li>
+                <li class="list-item">Fill out the word pairs boxes (these are the ones with the placeholder text crab and le crabe)</li>
+                <li class="list-item">Fill out the word pairs boxes (these are the ones with the placeholder text crab and le crabe)</li>
+                <li class="list-item">If you are using a language that isn't listed in the Language Code Table, add it as an entry under Settings > Edit Language Code Table (the latter part of a language code corresponds to language designations for TextToSpeech - you may have to experiment or look up a Language Code Table online to ensure the latter part is something that will accurately work)</li>
+                <li class="list-item">You should have a minimum of 10 entries in each word pairs box and the number of entries in each box must be the same.</li>
+              </ul>
+              <p>Note that once you set bal4web path and creator name, they will be saved upon exiting the program normally, and loaded on subsequent runs. So you only have to set these once for your setup.</p>
+              <p>Word Pair formatting conventions are as follows:</p>
+              <ul>
+                <li class="list-item">Each line is considered to be a single entry/pair, across both boxes.</li>
+                <li class="list-item">If you want to include a comma in an entry, include as: [code]comma[/code] (commas are used in formatting the WordPairs text files, so you use this to ensure there are no issues in how the files are read by Photon Match -- [code]comma[/code] will be converted to a , character once the words are loaded into Photon Match)</li>
+                <li class="list-item">Spaces are turned into linebreaks when the words are loaded into Photon Match (this is to limit incidences of the length of something exceeding the size of a flip card)</li>
+              </ul>
+              <p>When you are ready to turn your entries into ready-to-use Word Pairs and TextToSpeech, hit Export > Export Word Pairs</p>
+              <p>If Export > Settings > Include TextToSpeech is checked, the program will attempt to create TextToSpeech wav files for your word pairs, in addition to the text files. If the bal4web path is set accurately and the value for your corresponding language codes work, you should start seeing entries being processed in the TextToSpeech Export Log. This may take some time to complete, especially if you have a lot of entries, and the program may be slow to respond to commands. At the end, it will tell you if anything was ignored with regards to creation of audio files. Note that sometimes entries are ignored because they show up twice on the same side. For example, you might have "beautiful" (English) corresponding to "beau" (French) and "handsome" (English) corresponding to "beau" (French). In a case like this, as long as one instance of "beau" TextToSpeech gets created, both will be able to play audio in Photon Match; they will simply refer to the same file.</p>
+              <p>If you have a set of words in progress and want to save them for working on them later, you can use File > Save and File > Load</p>
+              <p>Files are saved with the .photonmatchproj extension. In reality, they are just plaintext formatted a specific way to be read back into Photon Match Puzzle Creator accurately, but they are given their own extension designation, so that you can set Windows to associate the extension with Photon Match Puzzle Creator and thus open them by double-clicking if you wish to do so.</p>
+              <p>When everything is finished, you just need to go into the folder where your Photon Match Puzzle Creator app is located and copy the parts of the WordPairs and TextToSpeech folders generated that you want to, to the Photon Match app folder. This extra step is to ensure you can check to make sure nothing gets unintentionally overwritten. It also means you have a backup in the location of Photon Match Puzzle Creator, of the things you've created, in case you delete Photon Match and lose them somehow. Note that the path structure should be a mirror of how it is expected to appear in the Photon Match folders, so as long as you copy in such a way that the path structure matches, the files should work and be loaded as expected next time you open up Photon Match.</p>
+              <p>Other miscellaneous things to note:</p>
+              <ul>
+                <li class="list-item">You can replace TextToSpeech audio files with real audio recording for a language if you wish. Just make sure it's named correctly.</li>
+                <li class="list-item">If the Language Code Table gets messed up somehow, there's a backup version of it in the folder backup > restore.txt (this is a backup of the version that comes with the program, not a backup of changes made)</li>
+                <li class="list-item">If you use Ctrl+Shift+V, it will paste the contents of the clipboard across both word pair boxes. If the lines have a comma, they will be split across by comma. This was a feature I made to more easily adapt an old format of text files for the program to a new format. It's not likely to be useful for anything you're doing, unless you have lists of translation word pairs laying around, separated by commas. :)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p>Robert Jay Myers - Apps, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+    </footer>
+  </body>
+</html>

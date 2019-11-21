@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Apps made by Robert Jay Myers">
+    <meta name="keywords" content="tiling puzzle, tile puzzle, game">
+    <meta name="author" content="Robert Jay Myers">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png"/>
+    <title>Tiling Puzzle Game - Robert Jay Myers - Apps</title>
+  </head>
+  <body>
+    <span class="to-top-floating-button">
+      <a href="#banner">Top</a>
+    </span>
+    <header>
+      <div class="container">
+        <div id="banner">
+          <a href="./index.html"><img src="../img/banner.png"></a><h1><span class="banner-border">Robert Jay Myers - Apps</span></h1>
+        </div>
+      </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="nav-link"><a href="../index.html">Home</a></li>
+            <li class="nav-link"><a href="../nav/donate.html">Donate</a></li>
+            <li class="nav-link"><a href="../nav/contact.html">Contact</a></li>
+            <li class="nav-link"><a href="../nav/about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="page-intro">
+      <div class="container">
+        <h1>Tiling Puzzle Game</h1>
+        <p>Tile puzzle game, can take any 400x400 images as puzzles.</p>
+        <p>A minimalistic tile puzzle game. Puzzles are taken in as 400x400 sized images placed in the puzzles folder. You click a piece to highlight it and then click where you want to move it to. You can click middle mouse button to show a solved version of the image as a hint for what you're trying to make the puzzle look like. When a puzzle is solved, you can move onto the next one. Once all puzzles are solved, continuing will restart at the beginning, with the order shuffled.</p>
+        <p>I made this game when I was learning how to use SDL2 library and wanted to see what kind of basic games I could make with it. Like with Cute Little Notes and the ability to make custom themes for it, there is a design philosophy here of allowing people to create their own content. You can put any 400x400 image in the puzzles folder to create your own puzzles.</p>
+      </div>
+    </section>
+    <section id="boxes-app-display">
+      <div class="container">
+        <a href="../img/tiling-puzzle-game.png" target="_blank">
+          <span class="box">
+            <img src="../img/tiling-puzzle-game.png">
+          </span>
+        </a>
+        <a href="../img/tiling-puzzle-game-display-img-puzzle-solved.png" target="_blank">
+          <span class="box">
+            <img src="../img/tiling-puzzle-game-display-img-puzzle-solved.png">
+          </span>
+        </a>
+        <a href="../img/tiling-puzzle-game-display-img-guitar.png" target="_blank">
+          <span class="box">
+            <img src="../img/tiling-puzzle-game-display-img-guitar.png">
+          </span>
+        </a>
+      </div>
+    </section>
+    <section id="main">
+      <div class="container">
+        <article id="documentation">
+          <div class="page-key">
+            <span class="dl-link"><a href="https://workupload.com/file/7aufKvJu" target="_blank">Download</a></span>
+            <span class="dl-link"><a href="https://github.com/robertjaymyers/TilingPuzzleSDL2" target="_blank">Source</a></span>
+            <p><b>Version:</b> 1.0</p>
+            <p><b>Compatibility</b>: Windows</p>
+            <h3>Features</h3>
+            <p>Solve puzzles by rearranging tiles into the right spots. Add your own puzzles to solve by placing 400x400 png images in the puzzles folder.</p>
+            <ul>
+              <li><a href="#subsection-how-to">How to Use</a></li>
+            </ul>
+          </div>
+          <div class="page-sections-top-border-layer">
+          </div>
+          <div class="page-sections">
+            <div id="subsection-how-to">
+              <h3>How to Use</h3>
+              <p>The game is played by clicking on tiles to select them and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the tile placement matches the original image.</p>
+              <ul>
+                <li class="list-item">Middle mouse button toggles visibility of a 'hint' version of the solved puzzle image, so you can see what the solved puzzle should look like if you're lost.</li>
+                <li class="list-item">Puzzles are pulled from 400x400 png images in the puzzles folder where the program is located.</li>
+                <li class="list-item">When a puzzle is complete, you can press space to go to the next one or x to quit.</li>
+                <li class="list-item">If all puzzles are solved and you continue on, the program will start over on all the loaded puzzles, with the order shuffled.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer>
+      <p>Robert Jay Myers - Apps, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+    </footer>
+  </body>
+</html>
