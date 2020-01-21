@@ -36,7 +36,8 @@
         <h1>Character Creator 2D Prototype</h1>
         <p>Prototype 2D Character Creation tool, with functionality for Saving, Loading, and Exporting combinations of character parts.</p>
         <p>Character Creation tools are something I love the creativity of, so I made this tool for fun and practice to see how far I could go in a 2D space and what that might look like.</p>
-        <p>It's designed to be more of a starting point than a finished tool. Something that can be expanded on or changed in the future, to extend how many different parts there are and accommodate the modification of them in the UI.</p>
+        <p>This tool is designed to be a starting point for character creation; something that can be expanded on or adapted to suit the needs of the person using it. As of writing this, source code is shared under the GNU General Public License v3.0. I know that some people are working with limited resources when creating games, sometimes completely on their own, so this tool aims to provide a way to implement a kind of character creation for 2D games, without needing to start from scratch or worry about licensing fees for expensive tools.</p>
+        <p>With the design of loading PNG images from the Assets folder, it also aims to make it easy for people to load custom assets, relative to a given usage of the tool. This makes it more feasible for modding communities to work with it, from the offset. This does mean the files are not compressed in some way, like they may be in a typical game, but you can likely set it up to load from a compressed format if you wish to do so.</p>
       </div>
     </section>
     <section id="boxes-app-display">
@@ -77,7 +78,7 @@
           <div class="page-sections">
             <div id="subsection-how-to">
               <h3>How to Use</h3>
-              <p>Parts are swapped by clicking the arrows in either direction. Colors for various parts are changed by clicking the buttons with unique icons, as displayed on the left side of the screen. Right-click the screen to get access to saving, loading, exporting, and set background color options.</p>
+              <p>Parts are swapped by clicking the arrows in either direction. Colors for various parts are changed by clicking the buttons with unique icons, as displayed on the left side of the screen. Name your character in the name input boxes and swap Pose with the pose button arrows (currently, there is only one pose for each Gender, so the Pose buttons won't seem like they're doing anything). Right-click the screen to get access to saving, loading, exporting, set background color, and gender or species change.</p>
               <p>From the right-click menu, you can choose:</p>
               <ul>
                 <li class="list-item">New Character: Resets the character back to the defaults.</li>
@@ -85,6 +86,8 @@
                 <li class="list-item">Save Character: Saves the current combination of parts for loading and modifying or exporting later. It's recommended that you save these in the Saves folder, since they are just plaintext files, so they could get confused with other files if you saved them just anywhere.</li>
                 <li class="list-item">Export Character: Allows you to save the current combination of parts as a PNG image that you can share or stare at.</li>
                 <li class="list-item">Set Background Color: Changes the color of the background. This color will be used as the background color when exporting.</li>
+                <li class="list-item">Species: Swap between Human or Elf (Elf has different ears).</li>
+                <li class="list-item">Gender: Swap between Female or Male for the given species.</li>
               </ul>
             </div>
           </div>
