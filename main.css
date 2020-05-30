@@ -60,15 +60,13 @@ ul
     color: #FFCEBA;
     border: #D8AF9C 1px solid;
     text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
     
     margin-top: 1%;
     margin-bottom: 1%;
     padding-left: 3%;
     padding-right: 3%;
     padding-top: 1%;
-    padding-bottom: 0.5%;
+    padding-bottom: 1%;
 }
 
 .page-key .keys li
@@ -98,14 +96,12 @@ ul
     color: #FFCEBA;
     border: #D8AF9C 1px solid;
     text-align: left;
-    margin-left: 10px;
-    margin-right: 10px;
     
     margin-bottom: 20px;
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .page-sections a
