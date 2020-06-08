@@ -16,7 +16,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="../img/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Tiling Puzzle Game - Robert Jay Myers</title>
+    <title>Tile Puzzles Forever - Robert Jay Myers</title>
   </head>
   <body>
     <span class="to-top-floating-button">
@@ -40,27 +40,27 @@
     </header>
     <section id="page-intro">
       <div class="container">
-        <h1>Tiling Puzzle Game</h1>
-        <p>Tile puzzle game, can take any 400x400 images as puzzles.</p>
-        <p>A minimalistic tile puzzle game. Puzzles are taken in as 400x400 sized images placed in the puzzles folder. You click a piece to highlight it and then click where you want to move it to. You can click middle mouse button to show a solved version of the image as a hint for what you're trying to make the puzzle look like. When a puzzle is solved, you can move onto the next one. Once all puzzles are solved, continuing will restart at the beginning, with the order shuffled.</p>
-        <p>I made this game when I was learning how to use SDL2 library and wanted to see what kind of basic games I could make with it. Like with Cute Little Notes and the ability to make custom themes for it, there is a design philosophy here of allowing people to create their own content. You can put any 400x400 image in the puzzles folder to create your own puzzles.</p>
+        <h1>Tile Puzzles Forever</h1>
+        <p>Tile puzzle game, can take any images to use as puzzles.</p>
+        <p>A minimalistic tile puzzle game. Puzzles are taken in as images placed in the puzzles folder, of type BMP, GIF, PNG, or JPG. You click a piece to highlight it and then click where you want to move it to. When a puzzle is solved, you can move onto the next one. Once all puzzles are solved, continuing will restart at the beginning, with the order shuffled.</p>
+        <p>I adapted this game to a less restricted version using Qt library; was previously made using SDL2 library. Like many of the programs featured on this website, I have a design philosophy of allowing people to create their own content. In this case, the idea that you can put any image in the puzzles folder to make your own puzzles. So pick out images of things you like, put them in the puzzles folder, and have fun!</p>
       </div>
     </section>
     <section id="boxes-app-display">
       <div class="container">
-        <a href="../img/tiling-puzzle-game.png" target="_blank">
+        <a href="../img/tilePuzzlesForeverImgDisplayMain.png" target="_blank">
           <span class="box">
-            <img src="../img/tiling-puzzle-game.png">
+            <img src="../img/tilePuzzlesForeverImgDisplayMain.png">
           </span>
         </a>
-        <a href="../img/tiling-puzzle-game-display-img-puzzle-solved.png" target="_blank">
+        <a href="../img/tilePuzzlesForeverImgDisplayPuzzleComplete.png" target="_blank">
           <span class="box">
-            <img src="../img/tiling-puzzle-game-display-img-puzzle-solved.png">
+            <img src="../img/tilePuzzlesForeverImgDisplayPuzzleComplete.png">
           </span>
         </a>
-        <a href="../img/tiling-puzzle-game-display-img-guitar.png" target="_blank">
+        <a href="../img/tilePuzzlesForeverImgDisplayPuzzleInProgress.png" target="_blank">
           <span class="box">
-            <img src="../img/tiling-puzzle-game-display-img-guitar.png">
+            <img src="../img/tilePuzzlesForeverImgDisplayPuzzleInProgress.png">
           </span>
         </a>
       </div>
@@ -69,8 +69,8 @@
       <div class="container">
         <nav>
             <ul>
-              <li><a href="https://workupload.com/file/7aufKvJu" target="_blank">Download</a></li>
-              <li><a href="https://github.com/robertjaymyers/TilingPuzzleSDL2" target="_blank">Source</a></li>
+              <li><a href="https://workupload.com/file/PTcadQ6VaJ5" target="_blank">Download</a></li>
+              <li><a href="https://github.com/robertjaymyers/Tile-Puzzles-Forever" target="_blank">Source</a></li>
             </ul>
         </nav>
         <article id="documentation">
@@ -81,6 +81,7 @@
             <p>Solve puzzles by rearranging tiles into the right spots. Add your own puzzles to solve by placing 400x400 png images in the puzzles folder.</p>
             <ul class="keys">
               <li><a href="#subsection-how-to">How to Use</a></li>
+              <li><a href="#subsection-legacy">Old Version</a></li>
             </ul>
           </div>
           <div class="page-sections-top-border-layer">
@@ -88,13 +89,21 @@
           <div class="page-sections">
             <div id="subsection-how-to">
               <h3>How to Use</h3>
-              <p>The game is played by clicking on tiles to select them and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the tile placement matches the original image.</p>
+              <p>In the style of the classic tile puzzle game, the game is played by clicking on one tile to select it and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the placement of every tile matches the original image.</p>
               <ul>
-                <li class="list-item">Middle mouse button toggles visibility of a 'hint' version of the solved puzzle image, so you can see what the solved puzzle should look like if you're lost.</li>
-                <li class="list-item">Puzzles are pulled from 400x400 png images in the puzzles folder where the program is located.</li>
-                <li class="list-item">When a puzzle is complete, you can press space to go to the next one or x to quit.</li>
-                <li class="list-item">If all puzzles are solved and you continue on, the program will start over on all the loaded puzzles, with the order shuffled.</li>
+                <li class="list-item">Puzzles are loaded from any image file in the puzzles folder where the program is located. Valid image types are: BMP, GIF, PNG, JPG</li>
+                <li class="list-item">When a puzzle is complete, press any key to continue. When all puzzles are complete, press R to shuffle and go again. You can repeat all you want.</li>
+                <li class="list-item">If you're struggling with a puzzle or having some kind of issue with it for whatever reason, you can press TAB to "cheat" the puzzle to completed state and go to the next one.</li>
+                <li class="list-item">The game comes with a config file, which can be customized to change the difficulty of puzzles, or change what folder puzzles are loaded from. For more information, see the comments in the config file.</li>
+                <li class="list-item">The game has no sound by default, but it can be given a sound effect to play for puzzle completion and "total victory" (completion of all puzzles). These are looked for in the audio folder under the names "puzzleComplete.wav" and "totalVictory.wav" (16-bit wav should work).</li>
+                <li class="list-item">Performance note: There are no hard restrictions on how many images the program can load at once, but it is advisable to be mindful of RAM usage if you're loading a ton. For reference, I tried loading a folder that had ~140 images of varying sizes (some fairly large) and was sitting at around 500MB of RAM used by the program. If you're using a modern PC with 16 or more gigs of RAM, or you only load in the double digits, this probably won't be noticeable. I just put it here as a warning, since I haven't tested the program's performance for an absurd number of images and there are no hard restrictions on how many you can try to load.</li>
               </ul>
+            </div>
+            <div id="subsection-legacy">
+              <h3>Old Version</h3>
+              <p>This page used to feature a tile puzzle game I made with SDL2 library, which was more restricted compared to the Qt library version.</p>
+              <p>If you would like to look at or use that version, you can still download it here: <a href="https://workupload.com/file/7aufKvJu" target="_blank">Download</a> | <a href="https://github.com/robertjaymyers/TilingPuzzleSDL2" target="_blank">Source</a></p>
+              <p>In the SDL2 version, puzzles are loaded from the puzzles folder, but can only be 400x400 png images. And you can click middle mouse button to show a solved version of the image as a hint for what you're trying to make the puzzle look like. Otherwise, it's the same general game as the Qt version, but more basic in design.</p>
             </div>
           </div>
         </article>
