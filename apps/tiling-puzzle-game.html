@@ -41,8 +41,8 @@
     <section id="page-intro">
       <div class="container">
         <h1>Tile Puzzles Forever</h1>
-        <p>Tile puzzle game, can take any images to use as puzzles.</p>
-        <p>A minimalistic tile puzzle game. Puzzles are taken in as images placed in the puzzles folder, of type BMP, GIF, PNG, or JPG. You click a piece to highlight it and then click where you want to move it to. When a puzzle is solved, you can move onto the next one. Once all puzzles are solved, continuing will restart at the beginning, with the order shuffled.</p>
+        <p>Play Rearrangement or Sliding puzzles.</p>
+        <p>Puzzles are created from images placed in the puzzles folder, of type BMP, GIF, PNG, or JPG.</p>
         <p>I adapted this game to a less restricted version using Qt library; was previously made using SDL2 library. Like many of the programs featured on this website, I have a design philosophy of allowing people to create their own content. In this case, the idea that you can put any image in the puzzles folder to make your own puzzles. So pick out images of things you like, put them in the puzzles folder, and have fun!</p>
       </div>
     </section>
@@ -69,7 +69,7 @@
       <div class="container">
         <nav>
             <ul>
-              <li><a href="https://workupload.com/file/vKLpS5a6GUF" target="_blank">Download</a></li>
+              <li><a href="https://workupload.com/file/QqcfLVUeS3C" target="_blank">Download</a></li>
               <li><a href="https://github.com/robertjaymyers/Tile-Puzzles-Forever" target="_blank">Source</a></li>
             </ul>
         </nav>
@@ -78,7 +78,7 @@
             <p><b>Version:</b> 1.0</p>
             <p><b>Compatibility</b>: Windows</p>
             <h3>Features</h3>
-            <p>Solve puzzles by rearranging tiles into the right spots. Add your own puzzles to solve by placing images in the puzzles folder.</p>
+            <p>Solve puzzles by moving tiles until they are all in their original place. Add your own puzzles to solve by placing images in the puzzles folder.</p>
             <ul class="keys">
               <li><a href="#subsection-how-to">How to Use</a></li>
               <li><a href="#subsection-legacy">Old Version</a></li>
@@ -89,12 +89,13 @@
           <div class="page-sections">
             <div id="subsection-how-to">
               <h3>How to Use</h3>
-              <p>In the style of the classic tile puzzle game, the game is played by clicking on one tile to select it and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the placement of every tile matches the original image.</p>
+              <p><b>Rearrangement Puzzle</b>: Rearrangement puzzles are played by clicking on one tile to select it and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the placement of every tile matches the original image.</p>
+              <p><b>Sliding Puzzle</b>: Sliding puzzles are played by clicking on any tile next to the blank spot to slide it into that spot. The puzzle is solved when the placement of every visible tile matches the original image.</p>
               <ul>
                 <li class="list-item">Puzzles are loaded from any image file in the puzzles folder where the program is located. Valid image types are: BMP, GIF, PNG, JPG</li>
                 <li class="list-item">When a puzzle is complete, press any key to continue. When all puzzles are complete, press R to shuffle and go again. You can repeat all you want.</li>
                 <li class="list-item">If you're struggling with a puzzle or having some kind of issue with it for whatever reason, you can press TAB to "cheat" the puzzle to completed state and go to the next one.</li>
-                <li class="list-item">The game comes with a config file, which can be customized to change the difficulty of puzzles, or change what folder puzzles are loaded from. For more information, see the comments in the config file.</li>
+                <li class="list-item">The game comes with a config file, which can be customized to change the difficulty of puzzles, change what folder puzzles are loaded from, or change the type of puzzle (default is REARRANGEMENT; supported types are REARRANGEMENT and SLIDING). For more information, see the comments in the config file.</li>
                 <li class="list-item">The game has no sound by default, but it can be given a sound effect to play for puzzle completion and "total victory" (completion of all puzzles). These are looked for in the audio folder under the names "puzzleComplete.wav" and "totalVictory.wav" (16-bit wav should work).</li>
               </ul>
             </div>
