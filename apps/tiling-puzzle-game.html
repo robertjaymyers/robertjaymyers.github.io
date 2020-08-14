@@ -38,24 +38,22 @@
         </nav>
       </div>
     </header>
-    <section id="page-intro">
-      <div class="container">
+    <div class="container">
+      <section id="page-intro">
         <h1>Tile Puzzles Forever</h1>
         <p>Play Rearrangement, Sliding, or Rotation puzzles.</p>
         <p>Puzzles are created from images placed in the puzzles folder, of type BMP, GIF, PNG, or JPG.</p>
         <p>I adapted this game to a less restricted version using Qt library; was previously made using SDL2 library. Like many of the programs featured on this website, I have a design philosophy of allowing people to create their own content. In this case, the idea that you can put any image in the puzzles folder to make your own puzzles. So pick out images of things you like, put them in the puzzles folder, and have fun!</p>
-      </div>
-    </section>
-    <section id="boxes-app-display">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="boxes-app-display">
         <span class="vid-box">
           <video controls>
             <source src="../vid/tile-puzzles-forever.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </span>
-      </div>
-      <div class="container">
         <a href="../img/tilePuzzlesForeverImgDisplayRotationPuzzle.png" target="_blank">
           <span class="box">
             <img src="../img/tilePuzzlesForeverImgDisplayRotationPuzzle.png" alt="Screenshot of tile puzzles forever on rotation puzzle">
@@ -71,56 +69,58 @@
             <img src="../img/tilePuzzlesForeverImgDisplaySlidingPuzzleInProgress.png" alt="Screenshot of tile puzzles forever on sliding puzzle">
           </span>
         </a>
-      </div>
-    </section>
-    <section id="main">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="download">
         <nav>
-            <ul>
-              <li><a href="https://workupload.com/file/eR27GENYmZu" target="_blank">Download</a></li>
-              <li><a href="https://github.com/robertjaymyers/Tile-Puzzles-Forever" target="_blank">Source</a></li>
-            </ul>
+          <ul>
+            <li><a href="https://workupload.com/file/eR27GENYmZu" target="_blank">Download</a></li>
+            <li><a href="https://github.com/robertjaymyers/Tile-Puzzles-Forever" target="_blank">Source</a></li>
+          </ul>
         </nav>
-        <article id="documentation">
-          <div class="page-key">
-            <p><b>Version:</b> 1.0</p>
-            <p><b>Compatibility</b>: Windows</p>
-            <h3>Features</h3>
-            <p>Solve puzzles by moving tiles until they are all in their original place. Add your own puzzles to solve by placing images in the puzzles folder.</p>
-            <ul class="keys">
-              <li><a href="#subsection-how-to">How to Use</a></li>
-              <li><a href="#subsection-legacy">Old Version</a></li>
-            </ul>
-          </div>
-          <div class="page-sections-top-border-layer">
-          </div>
-          <div class="page-sections">
-            <div id="subsection-how-to">
-              <h3>How to Use</h3>
-              <p><b>Rearrangement Puzzle</b>: Rearrangement puzzles are played by clicking on one tile to select it and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the placement of every tile matches the original image.</p>
-              <p><b>Sliding Puzzle</b>: Sliding puzzles are played by clicking on any tile next to the blank spot to slide it into that spot. The puzzle is solved when the placement of every visible tile matches the original image.</p>
-              <p><b>Rotation Puzzle</b>: Rotation puzzles are played by clicking on any tile to rotate it 90 degrees clockwise. Each time you rotate a tile, the tiles next to it are also rotated. The puzzle is solved when the rotation of every tile matches the original image. </p>
-              <ul>
-                <li class="list-item">Puzzles are loaded from any image file in the puzzles folder where the program is located. Valid image types are: BMP, GIF, PNG, JPG</li>
-                <li class="list-item">When a puzzle is complete, press any key to continue. When all puzzles are complete, press R to shuffle and go again. You can repeat all you want.</li>
-                <li class="list-item">If you're struggling with a puzzle or having some kind of issue with it for whatever reason, you can press TAB to "cheat" the puzzle to completed state and go to the next one.</li>
-                <li class="list-item">The game comes with a config file, which can be customized to change the difficulty of puzzles, change what folder puzzles are loaded from, or change the type of puzzle. For more information, see the comments in the config file. With the addition of a UI, you can do the config file operations with the game open. However, the config file can still be used to set default settings.</li>
-                <li class="list-item">UI options are available for: Loading a new set of puzzles from the chosen folder; setting the puzzle type; setting the size of the puzzle; going fullscreen (hit ESC to exit fullscreen). Once you've changed the desired puzzle settings, hit Apply Changes; this will reset the current puzzle, so make sure you're ready to do it.</li>
-                <li class="list-item">The game has no sound by default, but it can be given a sound effect to play for puzzle completion and "total victory" (completion of all puzzles). These are looked for in the audio folder under the names "puzzleComplete.wav" and "totalVictory.wav" (16-bit wav should work).</li>
-              </ul>
-            </div>
-            <div id="subsection-legacy">
-              <h3>Old Version</h3>
-              <p>This page used to feature a tile puzzle game I made with SDL2 library, which was more restricted compared to the Qt library version.</p>
-              <p>If you would like to look at or use that version, you can still download it here: <a href="https://workupload.com/file/7aufKvJu" target="_blank">Download</a> | <a href="https://github.com/robertjaymyers/TilingPuzzleSDL2" target="_blank">Source</a></p>
-              <p>In the SDL2 version, puzzles are loaded from the puzzles folder, but can only be 400x400 png images. And you can click middle mouse button to show a solved version of the image as a hint for what you're trying to make the puzzle look like. Otherwise, it's the same general game as the Qt version, but more basic and limited in design. It only has a Rearrangement style tile puzzle.</p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <footer>
-      <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
-    </footer>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-key">
+        <p><b>Version:</b> 1.0</p>
+        <p><b>Compatibility</b>: Windows</p>
+        <h3>Features</h3>
+        <p>Solve puzzles by moving tiles until they are all in their original place. Add your own puzzles to solve by placing images in the puzzles folder.</p>
+        <ul class="keys">
+          <li><a href="#subsection-how-to">How to Use</a></li>
+          <li><a href="#subsection-legacy">Old Version</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-sections">
+        <div id="subsection-how-to">
+          <h3>How to Use</h3>
+          <p><b>Rearrangement Puzzle</b>: Rearrangement puzzles are played by clicking on one tile to select it and then clicking on another tile to swap places between the two tiles. The puzzle is solved when the placement of every tile matches the original image.</p>
+          <p><b>Sliding Puzzle</b>: Sliding puzzles are played by clicking on any tile next to the blank spot to slide it into that spot. The puzzle is solved when the placement of every visible tile matches the original image.</p>
+          <p><b>Rotation Puzzle</b>: Rotation puzzles are played by clicking on any tile to rotate it 90 degrees clockwise. Each time you rotate a tile, the tiles next to it are also rotated. The puzzle is solved when the rotation of every tile matches the original image. </p>
+          <ul>
+            <li class="list-item">Puzzles are loaded from any image file in the puzzles folder where the program is located. Valid image types are: BMP, GIF, PNG, JPG</li>
+            <li class="list-item">When a puzzle is complete, press any key to continue. When all puzzles are complete, press R to shuffle and go again. You can repeat all you want.</li>
+            <li class="list-item">If you're struggling with a puzzle or having some kind of issue with it for whatever reason, you can press TAB to "cheat" the puzzle to completed state and go to the next one.</li>
+            <li class="list-item">The game comes with a config file, which can be customized to change the difficulty of puzzles, change what folder puzzles are loaded from, or change the type of puzzle. For more information, see the comments in the config file. With the addition of a UI, you can do the config file operations with the game open. However, the config file can still be used to set default settings.</li>
+            <li class="list-item">UI options are available for: Loading a new set of puzzles from the chosen folder; setting the puzzle type; setting the size of the puzzle; going fullscreen (hit ESC to exit fullscreen). Once you've changed the desired puzzle settings, hit Apply Changes; this will reset the current puzzle, so make sure you're ready to do it.</li>
+            <li class="list-item">The game has no sound by default, but it can be given a sound effect to play for puzzle completion and "total victory" (completion of all puzzles). These are looked for in the audio folder under the names "puzzleComplete.wav" and "totalVictory.wav" (16-bit wav should work).</li>
+          </ul>
+        </div>
+        <div id="subsection-legacy">
+          <h3>Old Version</h3>
+          <p>This page used to feature a tile puzzle game I made with SDL2 library, which was more restricted compared to the Qt library version.</p>
+          <p>If you would like to look at or use that version, you can still download it here: <a href="https://workupload.com/file/7aufKvJu" target="_blank">Download</a> | <a href="https://github.com/robertjaymyers/TilingPuzzleSDL2" target="_blank">Source</a></p>
+          <p>In the SDL2 version, puzzles are loaded from the puzzles folder, but can only be 400x400 png images. And you can click middle mouse button to show a solved version of the image as a hint for what you're trying to make the puzzle look like. Otherwise, it's the same general game as the Qt version, but more basic and limited in design. It only has a Rearrangement style tile puzzle.</p>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <footer>
+        <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+      </footer>
+    </div>
   </body>
 </html>
