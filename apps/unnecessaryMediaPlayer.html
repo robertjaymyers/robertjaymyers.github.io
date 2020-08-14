@@ -38,18 +38,18 @@
         </nav>
       </div>
     </header>
-    <section id="page-intro">
-      <div class="container">
+    <div class="container">
+      <section id="page-intro">
         <h1>Unnecessary Media Player</h1>
         <p>Media player built with Qt library, requires K-Lite Codec Pack or other similar Codec Pack to play beyond a few types of media.</p>
         <p>As far as I can tell, the last thing anyone needs is another media player. So I made one of my own.</p>
         <p>I made this project primarily as an exploration into the capability of Qt's QMediaPlayer functionality. Since it relies on the platform's video codecs, you'll need to install a codec pack, such as K-Lite Codec Pack, to get full capability of playing videos without issue.</p>
         <p>It can load and save playlists, or load and play individual media items; loop, shuffle, or play sequentially; and it comes with a "night light" toggle mode to make the UI colors darker and more free of blue tones.</p>
         <p>Supported types of media are: .wmv .gif .mp4 .avi .mp3 .webm .m4a .wav (there may be other types that are technically possible to play through Unnecessary Media Player, but can't be loaded due to the restrictions I placed on file types; I only allowed out of a group of standard media types I could verify as working)</p>
-      </div>
-    </section>
-    <section id="boxes-app-display">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="boxes-app-display">
         <a href="../img/unnecessaryMediaPlayerImgDisplayVidception.png" target="_blank">
           <span class="box">
             <img src="../img/unnecessaryMediaPlayerImgDisplayVidception.png" alt="Layered screenshot of player within player like inception">
@@ -65,56 +65,58 @@
             <img src="../img/unnecessaryMediaPlayerImgDisplayPhoton.png" alt="Screenshot of unnecessary media player playing recorded photon match gameplay">
           </span>
         </a>
-      </div>
-    </section>
-    <section id="main">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="download">
         <nav>
-            <ul>
-              <li><a href="https://workupload.com/file/WV4cvGTnzSv" target="_blank">Download</a></li>
-              <li><a href="https://github.com/robertjaymyers/Unnecessary-Media-Player" target="_blank">Source</a></li>
-            </ul>
+          <ul>
+            <li><a href="https://workupload.com/file/WV4cvGTnzSv" target="_blank">Download</a></li>
+            <li><a href="https://github.com/robertjaymyers/Unnecessary-Media-Player" target="_blank">Source</a></li>
+          </ul>
         </nav>
-        <article id="documentation">
-          <div class="page-key">
-            <p><b>Version:</b> 1.0</p>
-            <p><b>Compatibility</b>: Windows</p>
-            <h3>Features</h3>
-            <p>Play videos or music, create, load, and play playlists.</p>
-            <ul class="keys">
-              <li><a href="#subsection-how-to">How to Use</a></li>
-              <li><a href="#subsection-why-to">Why to Use</a></li>
-            </ul>
-          </div>
-          <div class="page-sections-top-border-layer">
-          </div>
-          <div class="page-sections">
-            <div id="subsection-how-to">
-              <h3>How to Use</h3>
-              <p>You can load Unnecessary Media Player on its own and then load media into it. You can also manually open media files with Unnecessary Media Player through the Windows right-click > Open With menu and then set Unnecessary Media Player as the default for that type of media, allowing you to double-clip media files to open them in Unnecessary Media Player.</p>
-              <ul>
-                <li class="list-item">Standard Media Player Features: Play/Pause/Stop; Adjust or Mute volume; Toggle Fullscreen</li>
-                <li class="list-item">Playback Type: Click the Loop button to change between Loop, Shuffle, or Sequential playback of playlist content.</li>
-                <li class="list-item">Night Light: Click the Star to toggle between normal UI colors and "night light" version.</li>
-                <li class="list-item">Playlist Management: Load a playlist or Save the current items as a playlist; Add an individual media item to the current playlist; Remove individual media items or shift-click the remove button to clear the entire current playlist of all items.</li>
-              </ul>
-            </div>
-            <div id="subsection-why-to">
-              <h3>Why to Use</h3>
-              <p>You may be wondering, "Why would I use this when there are a bajillion media players you can use on Windows, including default media players that come with the platform, like windows media player?"</p>
-              <p>I will offer some reasons below:</p>
-              <ul>
-                <li class="list-item">I have no idea.</li>
-                <li class="list-item">You hate windows media player for some reason.</li>
-                <li class="list-item">You are feeling adventurous and want to mix it up with how you play media. But I think the venn diagram of people who commonly feel adventurous and use windows looks like <a href="../img/windowsAdventureVennDiagram.png" target="_blank" title="Circle with windows user text inside not touching circle with commonly feels adventurous text inside">this</a>, so...</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <footer>
-      <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
-    </footer>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-key">
+        <p><b>Version:</b> 1.0</p>
+        <p><b>Compatibility</b>: Windows</p>
+        <h3>Features</h3>
+        <p>Play videos or music, create, load, and play playlists.</p>
+        <ul class="keys">
+          <li><a href="#subsection-how-to">How to Use</a></li>
+          <li><a href="#subsection-why-to">Why to Use</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-sections">
+        <div id="subsection-how-to">
+          <h3>How to Use</h3>
+          <p>You can load Unnecessary Media Player on its own and then load media into it. You can also manually open media files with Unnecessary Media Player through the Windows right-click > Open With menu and then set Unnecessary Media Player as the default for that type of media, allowing you to double-clip media files to open them in Unnecessary Media Player.</p>
+          <ul>
+            <li class="list-item">Standard Media Player Features: Play/Pause/Stop; Adjust or Mute volume; Toggle Fullscreen</li>
+            <li class="list-item">Playback Type: Click the Loop button to change between Loop, Shuffle, or Sequential playback of playlist content.</li>
+            <li class="list-item">Night Light: Click the Star to toggle between normal UI colors and "night light" version.</li>
+            <li class="list-item">Playlist Management: Load a playlist or Save the current items as a playlist; Add an individual media item to the current playlist; Remove individual media items or shift-click the remove button to clear the entire current playlist of all items.</li>
+          </ul>
+        </div>
+        <div id="subsection-why-to">
+          <h3>Why to Use</h3>
+          <p>You may be wondering, "Why would I use this when there are a bajillion media players you can use on Windows, including default media players that come with the platform, like windows media player?"</p>
+          <p>I will offer some reasons below:</p>
+          <ul>
+            <li class="list-item">I have no idea.</li>
+            <li class="list-item">You hate windows media player for some reason.</li>
+            <li class="list-item">You are feeling adventurous and want to mix it up with how you play media. But I think the venn diagram of people who commonly feel adventurous and use windows looks like <a href="../img/windowsAdventureVennDiagram.png" target="_blank" title="Circle with windows user text inside not touching circle with commonly feels adventurous text inside">this</a>, so...</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <footer>
+        <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+      </footer>
+    </div>
   </body>
 </html>
