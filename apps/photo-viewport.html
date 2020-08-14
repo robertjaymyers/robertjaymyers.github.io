@@ -38,16 +38,16 @@
         </nav>
       </div>
     </header>
-    <section id="page-intro">
-      <div class="container">
+    <div class="container">
+      <section id="page-intro">
         <h1>Photo Viewport</h1>
         <p>Simple photo viewer, with zooming and slideshow-like viewing capabilities. You can open a few different image file types in it (.png .jpg .bmp .gif) and view them with zooming, and swapping which one is displayed in a slideshow-like manner, with hotkeys.</p>
         <p>Images can be opened from file, dragged and dropped in from file or from the web, or copy/pasted in from file or the web.</p>
         <p>I don't recall why, but at some point, I disabled the built-in photo viewer on my Windows 10 PC and I wanted something with which I could view photos to my own preferences. This is meant to be minimalistic and purposefully leaves out things like keeping track of photos recently viewed in it. The only intentional form of saving is you can optionally save the current image you're on, while the program is open and has an image, or images, loaded.</p>
-      </div>
-    </section>
-    <section id="boxes-app-display">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="boxes-app-display">
         <a href="../img/photo-viewport-display-img-normal-view.png" target="_blank">
           <span class="box">
             <img src="../img/photo-viewport-display-img-normal-view.png" alt="Screenshot of photo viewport showing a photo at its full size">
@@ -63,69 +63,71 @@
             <img src="../img/photo-viewport-display-img-zoomed-in.png" alt="Screenshot of photo viewport showing a photo zoomed in">
           </span>
         </a>
-      </div>
-    </section>
-    <section id="main">
-      <div class="container">
+      </section>
+    </div>
+    <div class="container">
+      <section id="download">
         <nav>
-            <ul>
-              <li><a href="https://workupload.com/file/vqAhFUcXHPh" target="_blank">Download</a></li>
-              <li><a href="https://github.com/robertjaymyers/Photo-Viewport" target="_blank">Source</a></li>
-            </ul>
+          <ul>
+            <li><a href="https://workupload.com/file/vqAhFUcXHPh" target="_blank">Download</a></li>
+            <li><a href="https://github.com/robertjaymyers/Photo-Viewport" target="_blank">Source</a></li>
+          </ul>
         </nav>
-        <article id="documentation">
-          <div class="page-key">
-            <p><b>Version:</b> 1.0</p>
-            <p><b>Compatibility</b>: Windows</p>
-            <h3>Features</h3>
-            <p>Photo Viewport allows you to view photos in a minimalistic and straightforward way.</p>
-            <ul class="keys">
-              <li><a href="#subsection-zooming-and-slideshow">Zooming and Slideshow</a></li>
-              <li><a href="#subsection-drag-and-drop">Drag and Drop</a></li>
-              <li><a href="#subsection-menu-options">Menu Options</a></li>
-            </ul>
-          </div>
-          <div class="page-sections-top-border-layer">
-          </div>
-          <div class="page-sections">
-            <div id="subsection-zooming-and-slideshow">
-              <h3>Zooming and Slideshow</h3>
-              <p>Zooming and Slideshow capabilities are executed through keyboard shortcuts, with two different sets of shortcuts to make them easy to reach and use for what is convenient to you. The shortcuts are as follows.</p>
-              <p>Zooming</p>
-              <ul>
-                <li class="list-item">Zoom In - W or Up Arrow</li>
-                <li class="list-item">Zoom Out - S or Down Arrow</li>
-                <li class="list-item">Zoom Reset - R or Numpad 0 (you may need to turn on Numlock for this to work)</li>
-              </ul>
-              <p>Slideshow</p>
-              <ul>
-                <li class="list-item">Slide Left - A or Left Arrow</li>
-                <li class="list-item">Slide Right - D or Right Arrow</li>
-              </ul>
-              <p>Note that in this case, slideshow just means "the images currently loaded in the program." Technically, there is no such thing as a slideshow being created. It's just that you're shifting left or right in a list of the images you've loaded into the program and displaying the one you land on, which enables you to view the images in sequence like a slideshow.</p>
-              <p>Also note that when you add in a new image, it adds it to the end of the list and displays that latest item. This is meant to maintain the order of images as you added them and update you to viewing the image you added most recently.</p>
-            </div>
-            <div id="subsection-drag-and-drop">
-              <h3>Drag and Drop</h3>
-              <p>You can drag and drop images in from existing files on your computer, or from the web.</p>
-              <p>Files should end in one of the extensions .png, .jpg, .bmp, or .gif</p>
-              <p>You may find that dragging web files will result in it dragging an html file, rather than an image file. In this case, you can either try to go to the image source url directly and then drag it from there, or copy/pasting, which is described in more detail in the Menu Options section below.</p>
-            </div>
-            <div id="subsection-menu-options">
-              <h3>Menu Options</h3>
-              <p>You can right-click on the screen to access a few different options.</p>
-              <ul>
-                <li class="list-item">Open Image: Allows you to open images from the files on your computer, of type .png, .jpg, .bmp, or .gif</li>
-                <li class="list-item">Paste Image: If you've copied the url to an image, or the image data itself (ex: using Copy Image in a web browser) you can use this to paste the image into the program.</li>
-                <li class="list-item">Save Current Image: Allows you to save the currently displayed image to your computer where desired.</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <footer>
-      <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
-    </footer>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-key">
+        <p><b>Version:</b> 1.0</p>
+        <p><b>Compatibility</b>: Windows</p>
+        <h3>Features</h3>
+        <p>Photo Viewport allows you to view photos in a minimalistic and straightforward way.</p>
+        <ul class="keys">
+          <li><a href="#subsection-zooming-and-slideshow">Zooming and Slideshow</a></li>
+          <li><a href="#subsection-drag-and-drop">Drag and Drop</a></li>
+          <li><a href="#subsection-menu-options">Menu Options</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container">
+      <section id="page-sections">
+        <div id="subsection-zooming-and-slideshow">
+          <h3>Zooming and Slideshow</h3>
+          <p>Zooming and Slideshow capabilities are executed through keyboard shortcuts, with two different sets of shortcuts to make them easy to reach and use for what is convenient to you. The shortcuts are as follows.</p>
+          <p>Zooming</p>
+          <ul>
+            <li class="list-item">Zoom In - W or Up Arrow</li>
+            <li class="list-item">Zoom Out - S or Down Arrow</li>
+            <li class="list-item">Zoom Reset - R or Numpad 0 (you may need to turn on Numlock for this to work)</li>
+          </ul>
+          <p>Slideshow</p>
+          <ul>
+            <li class="list-item">Slide Left - A or Left Arrow</li>
+            <li class="list-item">Slide Right - D or Right Arrow</li>
+          </ul>
+          <p>Note that in this case, slideshow just means "the images currently loaded in the program." Technically, there is no such thing as a slideshow being created. It's just that you're shifting left or right in a list of the images you've loaded into the program and displaying the one you land on, which enables you to view the images in sequence like a slideshow.</p>
+          <p>Also note that when you add in a new image, it adds it to the end of the list and displays that latest item. This is meant to maintain the order of images as you added them and update you to viewing the image you added most recently.</p>
+        </div>
+        <div id="subsection-drag-and-drop">
+          <h3>Drag and Drop</h3>
+          <p>You can drag and drop images in from existing files on your computer, or from the web.</p>
+          <p>Files should end in one of the extensions .png, .jpg, .bmp, or .gif</p>
+          <p>You may find that dragging web files will result in it dragging an html file, rather than an image file. In this case, you can either try to go to the image source url directly and then drag it from there, or copy/pasting, which is described in more detail in the Menu Options section below.</p>
+        </div>
+        <div id="subsection-menu-options">
+          <h3>Menu Options</h3>
+          <p>You can right-click on the screen to access a few different options.</p>
+          <ul>
+            <li class="list-item">Open Image: Allows you to open images from the files on your computer, of type .png, .jpg, .bmp, or .gif</li>
+            <li class="list-item">Paste Image: If you've copied the url to an image, or the image data itself (ex: using Copy Image in a web browser) you can use this to paste the image into the program.</li>
+            <li class="list-item">Save Current Image: Allows you to save the currently displayed image to your computer where desired.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <footer>
+        <p>Robert Jay Myers, Copyright &copy; 2019-<script language="JavaScript" type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+      </footer>
+    </div>
   </body>
 </html>
